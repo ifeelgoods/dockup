@@ -7,10 +7,10 @@ ADD /scripts /dockup/
 RUN chmod 755 /dockup/*.sh
 
 ENV S3_BUCKET_NAME docker-backups.example.com
-ENV AWS_ACCESS_KEY_ID **DefineMe**
-ENV AWS_SECRET_ACCESS_KEY **DefineMe**
+# Use ECS Task role
+# ENV AWS_ACCESS_KEY_ID **DefineMe**
+# ENV AWS_SECRET_ACCESS_KEY **DefineMe**
 ENV AWS_DEFAULT_REGION us-east-1
-ENV AWS_USE_SERVICE_TASK_ROLE false
 ENV PATHS_TO_BACKUP auto
 ENV CONTENT_ONLY false
 ENV BACKUP_NAME backup

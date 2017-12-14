@@ -106,9 +106,7 @@ For restoring an encrypted file, the following environment variables need to be 
 
 ## Use AWS IAM Service Task Role
 
-Instead of setup AWS key, secret you can use IAM role. 
-
-* **AWS_USE_SERVICE_TASK_ROLE** - Use IAM role instead of AWS keys (defaults to false)
+Build docker image without AWS credentials in the env vars to use the task role
 
 ## Backup only the content of the path (not the directory structure)
 
